@@ -1,0 +1,6 @@
+name = input("What is your name? ")
+print("Hello,", name)
+input("how are you?")
+print("good to know")
+age = int(input("how old are you?"))
+print("really, you are", age, "?", "you are too old oh")
