@@ -14,7 +14,8 @@ msg = input("Enter your message: ")
 recipient = input("Enter recipient's email address: ")
 
 sender_email = "olawale.olaseha@gmail.com"
-sender_password = 'usaijzuhfutgetwz'
+sender_password = 'usaijzuhfutgetwz' #generate a new app password and update this password when next you run this code. I have deleted 
+                                    #this "specific application password" from my gmail account.
 receiver_email = recipient
 
 subject = input("Enter the Subject of the email: ")
