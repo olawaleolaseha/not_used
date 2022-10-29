@@ -146,10 +146,116 @@
 
 # print(sum_1st_5)
 
-egg_count = 0
+# egg_count = 0
 
-def buy_eggs():
-    egg_count += 12 # purchase a dozen eggs
+# def buy_eggs():
+#     egg_count += 12 # purchase a dozen eggs
 
-buy_eggs()
+# buy_eggs()
 
+# how_many_snakes = 1
+# snake_string = """
+# Welcome to Python3!
+
+#              ____
+#             / . .\\
+#             \  ---<
+#              \  /
+#    __________/ /
+# -=:___________/
+
+# <3, Juno
+# """
+
+
+# print(snake_string * how_many_snakes)
+
+#==============================================================================================
+# Handling Errors
+
+# def party_planner(cookies, people):
+#     leftovers = None # when I commented out lines 176 and 177, the program crashed on line 186. Try again later when you understand more! Figure out the importance of these 2 lines.
+#     num_each = None
+#     # TODO: Add a try-except block here to
+#     #       make sure no ZeroDivisionError occurs.
+#     try:
+#         num_each = cookies // people
+#         leftovers = cookies % people
+#     except ZeroDivisionError:
+#         print("We need to have at least one person in the party")
+
+#     return(num_each, leftovers)
+
+# # The main code block is below; do not edit this
+# lets_party = 'y'
+# while lets_party == 'y':
+
+#     cookies = int(input("How many cookies are you baking? "))
+#     people = int(input("How many people are attending? "))
+
+#     num_each, leftovers = party_planner(cookies, people)
+
+#     if num_each:  # if cookies_each is not None
+#         message = f"\nLet's party! We'll have {people} people attending, they'll each get to eat {num_each} cookies, and we'll have {leftovers} left over."
+#         print(message)
+
+#     lets_party = input("\nWould you like to party more? (y or n) ")
+
+#================================================================================================================
+
+# # testing math library
+# import math
+
+# x = float(input("enter a number with decimal points: "))
+
+# print(math.ceil(x))
+
+#==================================================================================================================
+# line = 'Wale Olaseha'
+
+# letter = line[0]
+
+# print(letter)
+
+#========================================================================================================================
+
+#Quiz Game:
+print("\nWelcome to this short quiz game!\n")
+checker = input("Would you like to play today? Yes/No: ")
+if checker.lower() == 'yes':
+    print("\nGreat, let's do this\n")
+else:
+    print("See you some other times, then")
+    quit()
+
+corr_ans = 0
+ques_no = 0
+
+ques = print("Q1: What is the capital of Alberta? :\nA. Calgary\nB. London\nC. Edmonton\nD. Nunavut")
+ans = input("enter your answer here: ")
+ques_no += 1
+if ans.lower() == 'c':
+    corr_ans += 1
+
+ques = print("\nQ2: What is the capital of Ondo? :\nA. Oyo\nB. London\nC. Nunavut\nD. Akure")
+ans = input("enter your answer here: ")
+ques_no += 1
+if ans.lower() == 'd':
+    corr_ans += 1
+
+ques = print("\nQ3: What is the capital of Ontario? :\nA. Toronto\nB. London\nC. Nunavut\nD. Akure")
+ans = input("enter your answer here: ")
+ques_no += 1
+if ans.lower() == 'a':
+    corr_ans += 1
+
+ques = print("\nQ4: What is the capital of Texas? :\nA. Toronto\nB. Austin\nC. Nunavut\nD. Akure")
+ans = input("enter your answer here: ")
+ques_no += 1
+if ans.lower() == 'b':
+    corr_ans += 1
+
+percent_score = (corr_ans / ques_no) * 100
+print(f"\nyou got {corr_ans} correctly, so your score is {percent_score}%")
+
+#================================================================================================================================================================
