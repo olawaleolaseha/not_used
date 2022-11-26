@@ -15,7 +15,7 @@ print(f"good to know that you are now {y} feet tall and you are {x} in complexio
 print("good to know that you are now" ,y, "feet tall" + "and you are" +  x  +  "in complexion")# This is not good as it will join 
 #tall&add together even if you put spaces around the +. same thing around dark. I think this is how concatenation works...investigate later
 print("good to know that you are now {} feet tall and you are {} in complexion" .format(y,x))
-print("good to know that you are now %d feet tall and you are %s in complexion" %(y,x)) #i dont know why this line is not working...
+print("good to know that you are now %d feet tall and you are %s in complexion" %(y,x))
 
 
 

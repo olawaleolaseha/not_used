@@ -220,42 +220,168 @@
 #========================================================================================================================
 
 #Quiz Game:
-print("\nWelcome to this short quiz game!\n")
-checker = input("Would you like to play today? Yes/No: ")
-if checker.lower() == 'yes':
-    print("\nGreat, let's do this\n")
-else:
-    print("See you some other times, then")
-    quit()
+# name = input("Enter your name to start Quiz: ")
+# print("\nWelcome to this short quiz game!\n")
+# checker = input("Would you like to play today? Yes/No: ")
+# if checker.lower() == 'yes':
+#     print("\nGreat, let's do this\n")
+# else:
+#     print("See you some other times, then")
+#     quit()
 
-corr_ans = 0
-ques_no = 0
+# corr_ans = 0
+# ques_no = 0
 
-ques = print("Q1: What is the capital of Alberta? :\nA. Calgary\nB. London\nC. Edmonton\nD. Nunavut")
-ans = input("enter your answer here: ")
-ques_no += 1
-if ans.lower() == 'c':
-    corr_ans += 1
+# ques = print("Q1: What is the capital of Alberta? :\nA. Calgary\nB. London\nC. Edmonton\nD. Nunavut")
+# ans = input("enter your answer here: ")
+# ques_no += 1
+# if ans.lower() == 'c':
+#     print("Correct!")
+#     corr_ans += 1
+# else:
+#     print("Incorrect!")
 
-ques = print("\nQ2: What is the capital of Ondo? :\nA. Oyo\nB. London\nC. Nunavut\nD. Akure")
-ans = input("enter your answer here: ")
-ques_no += 1
-if ans.lower() == 'd':
-    corr_ans += 1
+# ques = print("\nQ2: What is the capital of Ondo? :\nA. Oyo\nB. London\nC. Nunavut\nD. Akure")
+# ans = input("enter your answer here: ")
+# ques_no += 1
+# if ans.lower() == 'd':
+#     print("Correct!")
+#     corr_ans += 1
+# else:
+#     print("Incorrect!")
 
-ques = print("\nQ3: What is the capital of Ontario? :\nA. Toronto\nB. London\nC. Nunavut\nD. Akure")
-ans = input("enter your answer here: ")
-ques_no += 1
-if ans.lower() == 'a':
-    corr_ans += 1
+# ques = print("\nQ3: What is the capital of Ontario? :\nA. Toronto\nB. London\nC. Nunavut\nD. Akure")
+# ans = input("enter your answer here: ")
+# ques_no += 1
+# if ans.lower() == 'a':
+#     print("Correct!")
+#     corr_ans += 1
+# else:
+#     print("Incorrect!")
 
-ques = print("\nQ4: What is the capital of Texas? :\nA. Toronto\nB. Austin\nC. Nunavut\nD. Akure")
-ans = input("enter your answer here: ")
-ques_no += 1
-if ans.lower() == 'b':
-    corr_ans += 1
+# ques = print("\nQ4: What is the capital of Texas? :\nA. Toronto\nB. Austin\nC. Nunavut\nD. Akure")
+# ans = input("enter your answer here: ")
+# ques_no += 1
+# if ans.lower() == 'b':
+#     print("Correct!")
+#     corr_ans += 1
+# else:
+#     print("Incorrect!")
 
-percent_score = (corr_ans / ques_no) * 100
-print(f"\nyou got {corr_ans} correctly, so your score is {percent_score}%")
+# percent_score = (corr_ans / ques_no) * 100
+# print(f"\nThank you {name}. You got {corr_ans} correctly, so your score is {percent_score}%")
 
 #================================================================================================================================================================
+
+#Number guessing game using module "random" that comes with python. This does not need to be installed as it already part of default python library.
+#In this project, the user supplies a fixed number that represents the top of the range (0 to the top_of_range user supplied) he wants to guess from.
+#After, the user gusses a number in that range that would match what the computer would genrate with the "random" module.
+#Once the user's guess matches the number outputted by "random" module, the user stops guessing and the program returns how many attempts the user made before guessing right.
+
+# import random
+# top_of_range = input("Enter the absolute max number your guess should stay under: ")
+# if top_of_range.isdigit() and int(top_of_range) > 0:
+#     top_of_range = int(top_of_range)
+#     random_number = random.randint(0, top_of_range)
+# else:
+#     print("Please enter a number in digits and greater than zero next time")
+#     quit()
+
+# guesses = 0
+# while True:
+#     guessed_no = input("Make a guess: ")
+#     guesses += 1
+#     if guessed_no.isdigit():
+#         guessed_no = int(guessed_no)
+#     else:
+#         print("Please enter a number next guess")
+#         continue    
+#     if guessed_no == random_number:
+#         print("you guessed right")
+#         break
+#     elif guessed_no > random_number:
+#         print("you guessed too high, guess a smaller number next try")
+#         continue
+#     else:
+#         print("you guessed too low, guess a larger number next try")
+#         continue
+# print(f"you got it in {guesses} guess(es)")
+
+# Investigate later: Although the code worked as intended, do you really need to have that many "continue" in the code above? For now, remember that whenever we reach "continue",
+# the code ignores the lines below and go back to the top of the while loop.
+# "break" exits the loop (i.e breaks out of the loop).
+
+#============================================================================================================================================================================
+
+#rock/paper/scissors game.
+# user will choose from any of rock, paper and scissors. Computer will make a guess to match what user chose. If computer guessed right, user loses.
+# If computer guessed wrong, user wins.
+#Note that TechwithTim used while loop to implememt this. If you want to continue to play the game until you decide to enter Q to quit it yourself, while loop should be used.
+#If you only want to iterate through rock, paper and scissors and want the program to quit and give you the result, use FOR LOOP.
+#View Tim's solution on
+#https://www.youtube.com/watch?v=DLn3jOsNRVE
+
+# Using while loop
+# import random
+# comp_won = 0
+# user_won = 0
+
+# option_list = ['rock', 'paper', 'scissors']
+# # for i in option_list:
+# while True:
+#     user_choice = input("Enter Rock/Paper/Scissors or Q to quit game: ")
+#     user_choice = user_choice.lower()
+#     computer_option_index = random.randint(0, 2)
+#     computer_pick = option_list[computer_option_index]
+#     if user_choice == 'q':
+#         break
+#     if user_choice not in option_list:
+#         continue
+#     elif user_choice == computer_pick:
+#         print(f'computer picked {computer_pick}')
+#         print('computer won!')
+#         comp_won += 1
+#         continue
+#     else:
+#         print(f'computer picked {computer_pick}')
+#         print('you won!')
+#         user_won += 1
+# print(f"Good bye: you won {user_won} times, and computer won {comp_won} times")
+
+# #==============================================================================================================================================================================
+
+# #Using FOR LOOP for the problem above: Note that the program behaves differently. Read details above.
+
+# # Using while loop
+# import random
+# comp_won = 0
+# user_won = 0
+
+# option_list = ['rock', 'paper', 'scissors']
+# for i in option_list:
+# # while True:
+#     user_choice = input("Enter Rock/Paper/Scissors or Q to quit game: ")
+#     user_choice = user_choice.lower()
+#     computer_option_index = random.randint(0, 2)
+#     computer_pick = option_list[computer_option_index]
+#     if user_choice == 'q':
+#         break
+#     if user_choice not in option_list:
+#         continue
+#     elif user_choice == computer_pick:
+#         print(f'computer picked {computer_pick}')
+#         print('computer won!')
+#         comp_won += 1
+#         continue
+#     else:
+#         print(f'computer picked {computer_pick}')
+#         print('you won!')
+#         user_won += 1
+# print(f"Good bye: you won {user_won} times, and computer won {comp_won} times")
+
+#===============================================================================================================================================
+
+#Choose your own adventure game:
+# It is pretty straight forward. Take a llok at the nesting of the if statements. You could have multiple layers of nested if statements
+# depending on how complex you want your game to be. Check out Tim's code on https://github.com/techwithtim/5-Python-Projects-For-Beginners for more information. Also
+#see his video on https://www.youtube.com/watch?v=DLn3jOsNRVE

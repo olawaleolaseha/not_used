@@ -1,0 +1,41 @@
+2022-11-11 16:24:37.950587
+TIME           object
+CRPM          float64
+CUREDT        float64
+SHK3TIME      float64
+SHKPK         float64
+SHKR          float64
+SHKRSK        float64
+SHOCKS_ACC    float64
+STICK         float64
+STICKNSLIP    float64
+STUCK         float64
+TEMP_DNI      float64
+TRPM          float64
+TSHK          float64
+VIB_LAT       float64
+VIB_X         float64
+DHAP          float64
+DHAT          float64
+SHKL          float64
+SSPCNT        float64
+SSTIME        float64
+STKSLP        float64
+STICKRATIO    float64
+dtype: object
+LAS File loaded...
+TeleScope
+TeleScope
+arcVISION
+SHKRSK not found!
+arcVISION
+PowerDrive
+SHKRSK not found!
+VIB_LAT not found!
+VIB_AXL not found!
+PowerDrive
+SHKPK_LAT not found!
+SHKPK_AXL not found!
+[Errno 2] No such file or directory: 'C:\\Users\\OOlaseha\\Documents\\wale-python-projects\\schlumberger-blue-small.png'
+Try Again!
+
